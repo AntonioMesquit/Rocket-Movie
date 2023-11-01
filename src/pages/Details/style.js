@@ -4,11 +4,16 @@ export const Container = styled.div`
 display: grid;
 width: 100%;
 height: 100vh;
-grid-template-rows: 300px auto;
+grid-template-rows: 150px auto;
 grid-template-areas:
 "header"
 "content";
 
+
+@media screen and (max-width:768px){
+grid-template-rows: 270px auto;
+
+}
 `
 export const Content = styled.div`
 grid-area: content;
