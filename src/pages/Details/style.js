@@ -81,5 +81,6 @@ p{
 
 @media screen and (max-width: 768px) {
     margin: 20px 20px 0px 20px;
+    width: 90%;
 }  
 `

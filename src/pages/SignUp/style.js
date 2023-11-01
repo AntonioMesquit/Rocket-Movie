@@ -9,6 +9,10 @@ export const Form = styled.div`
 width: 55%;
 margin-bottom: 40px;
 
+@media screen and (max-width:768px){
+    width: 100%;
+    padding-inline: 50px;
+}
 
 `
 export const Content = styled.div`
