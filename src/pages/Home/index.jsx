@@ -1,5 +1,5 @@
-import { Note } from "../../components/Note";
-import { Section } from "../../components/Section";
+import { Note } from "../../components/note";
+import { Section } from "../../components/section";
 import { Container } from "./style";
 import { FiPlus } from 'react-icons/fi';
 import { Link, useNavigate } from "react-router-dom";
