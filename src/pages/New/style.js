@@ -8,10 +8,14 @@ grid-template-areas:
 "header"
 "content";
 
-
+@media screen and (max-width:768px){
+    .mobile{
+    display:  none;
+   }
+}
 `
 export const Content = styled.div`
-margin: 100px 106px 85px 123px;
+margin: 40px 106px 85px 123px;
 
 > main{
 grid-area: content;
@@ -82,7 +86,7 @@ margin-bottom: 24px;
     margin: 0;
     padding: 20px;
   
-
+  
     
 }
 `

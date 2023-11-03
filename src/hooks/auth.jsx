@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { api } from "../services/api";
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext({});
@@ -53,6 +54,8 @@ function AuthProvider({ children }) {
 
           const response = await api.patch("/users/avatar", fileUploadForm);
           user.avatar = response.data.avatar;
+          
+          
         }
         await api.put("/users", user);
         localStorage.setItem("@rocketmovies:user", JSON.stringify(user));

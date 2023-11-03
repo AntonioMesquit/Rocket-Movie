@@ -68,21 +68,23 @@ export default function New(){
       toast.success("nota criada com sucesso!" , {
          theme: "dark"
       })
-      navigate("/")
+      navigate(-1)
    
    }
    function handleDescartNote(){
       toast.success("Nota descartada" , {
          theme: "dark"
       })
-      navigate("/")
+      navigate(-1)
    }
    
     return(
       
         <Container>
-       
-
+            
+            <div className="mobile">
+            <Header/>
+            </div>
             <Content>
             <main>
              <header>
