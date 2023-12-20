@@ -35,6 +35,7 @@ function AuthProvider({ children }) {
         success: "Usuario autenticado com sucesso!",
         error: "Email/Senha invalidos",
         
+        
       }
     );
   }
